@@ -1,3 +1,50 @@
+/* Responsive design pentru mobil */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 3%;
+    font-size: 16px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  .navbar ul li {
+    margin: 10px 0 0 0;
+  }
+  .home {
+    flex-direction: column;
+    padding: 100px 3% 0 3%;
+    height: auto;
+    text-align: center;
+  }
+  .home-info h1 {
+    font-size: 32px;
+  }
+  .home-info h2 {
+    font-size: 20px;
+  }
+  .home-info p {
+    font-size: 14px;
+  }
+  .btn-sci {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .home-img {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .img-box, .img-item, .img-item img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
