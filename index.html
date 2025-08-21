@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="icon.png" type="image/icon">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
@@ -15,36 +15,51 @@
 <body>
 
     <nav class="navbar">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">
+        <img src="images/icon.png" alt="icon" class="site-icon" style="height:32px;vertical-align:middle;margin-right:8px;">
+            Portfolio
+        </a>
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="About.html">About Me</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="about.html">About Me</a></li>
             <li><a href="Skills.html">Skills</a></li>
         </ul>
+                    <button class="menu-toggle" aria-label="Open menu" style="background:transparent;border:none;position:absolute;right:30px;top:30px;z-index:101;">
+                        <img src="images/menu-bar.png" alt="menu" style="height:32px;width:32px;">
+                    </button>
+                    <ul class="nav-menu" style="display:none;position:absolute;top:70px;left:0;width:100vw;background:skyblue;padding:20px 0;box-shadow:0 2px 8px rgba(0,0,0,0.10);flex-direction:column;align-items:center;">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="Skills.html">Skills</a></li>
+                    </ul>
     </nav>
-    <section class="home">
-        <div class="home-info">
-            <h1>Ioniță Aurel-Mihai</h1>
-            <h2>I'm a Web Developer</h2>
-            <p>"Never underestimate the people who try to make the world a better place. Those are the only ones who truly succeed."</p>
-            <div class="btn-sci">
-                <a href="CV.html" class="btn">See CV</a>
-                <div class="sci">
-                    <a href="https://github.com/iam269"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/aurel-ionita-20648536a/"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://www.instagram.com/eusuntaurel1/"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.facebook.com/share/1HRmGUpP3L/"><i class='bx bxl-facebook' ></i></a>
+        <section class="home">
+            <div class="home-flex">
+                <div class="home-info">
+                    <h1>Ioniță Aurel-Mihai</h1>
+                    <h2>I'm a Web Developer</h2>
+                    <p>"Never underestimate the people who try to make the world a better place. Those are the only ones who truly succeed."</p>
+                    <div class="btn-sci">
+                        <a href="CV.html" class="btn">See CV</a>
+                        <div class="sci">
+                            <a href="https://github.com/iam269"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.linkedin.com/in/aurel-ionita-20648536a/"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://www.instagram.com/eusuntaurel1/"><i class='bx bxl-instagram' ></i></a>
+                            <a href="https://www.facebook.com/share/1HRmGUpP3L/"><i class='bx bxl-facebook' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-img">
+                    <div class="img-box">
+                        <div class="img-item">
+                            <img src="images/home.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
-          <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="home.jpg" alt="">
-                </div>
-            </div>
-          </div>
-    </section>
+        </section>
     <footer>
         <p>&copy; 2025 Ioniță Aurel-Mihai. All rights reserved.</p>
     </footer>
