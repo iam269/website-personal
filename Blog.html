@@ -1,368 +1,189 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="images/icon.png" type="image/icon" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blog</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="images/icon.png" type="image/icon" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogul Meu</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
     <nav class="navbar">
-      <a href="#" class="logo">
-        <img src="images/icon.png" alt="icon" class="site-icon" style="height:32px;vertical-align:middle;margin-right:8px;">
-        Portfolio
-      </a>
-      <ul class="nav-menu">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="Blog.html">Blog</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="Skills.html">Skills</a></li>
-      </ul>
-      <button class="menu-toggle" aria-label="Open menu" style="background:transparent;border:none;display:none;">
-        <img src="images/menu-bar.png" alt="menu" style="height:32px;width:32px;">
-      </button>
+      <a href="index.html" class="logo"><img src="images/icon.png" alt="icon" class="site-icon" style="height:32px;vertical-align:middle;margin-right:8px;">Înapoi Acasă </a>
     </nav>
-    <header style="position: relative; width: fit-content; margin: 0 auto">
-      <img src="images/blog.jpg" style="display: block; width: 100%; height: auto" />
-      <h1
-        style="
-          position: absolute;
-          left: 50%;
-          bottom: 0;
-          transform: translateX(-50%) translateY(30%);
-          background: rgba(0, 123, 255, 0.5);
-          color: white;
-          padding: 16px 32px;
-          border-radius: 12px;
-          font-size: 2.5rem;
-          text-align: center;
-          min-width: 60%;
-          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-        "
-      >
-        Aurel's Blog
-      </h1>
-    </header>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" href="icon.png" type="image/icon" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Personal Portfolio</title>
-        <link
-          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-      </head>
-
-      <body>
-        <nav class="navbar">
-          <a href="index.html" class="logo"><img src="images/icon.png" alt="icon" class="site-icon" style="height:32px;vertical-align:middle;margin-right:8px;">Back to Home</a>
-        </nav>
-        <div class="blog-content-centered">
-          <h1>Articles:</h1>
-          <ul>
-            <h2>Article 1: What is programming?</h2>
-            <article>
-              <p>
-                Programming is the process of creating a set of instructions
-                that tell a computer how to perform a task. It is an essential
-                tool in software development and in process automation.
-              </p>
-            </article>
-            <article>
-              <h2>How do humans communicate with computers?</h2>
-              <p>
-                Computers understand only <strong>binary code</strong> (0 and 1).
-                To prevent humans from having to write in this language,
-                <strong>programming languages</strong> such as
-                Python, JavaScript, C++ or Java were invented.
-              </p>
-              <p>
-                A <strong>compiler</strong> or an
-                <strong>interpreter</strong> translates the code we write into
-                instructions that the computer can execute.
-              </p>
-            </article>
-            <h2>Article 2: How to choose your first programming language?</h2>
-            <article>
-              <article>
-                <p>
-                  There are hundreds of programming languages, but you don't
-                  need to learn them all. The choice depends on what you want to
-                  create and how quickly you want to see results. Before you
-                  start, ask yourself: What do I want to do with programming?
-                </p>
-              </article>
-              <article>
-                <h2>💻 If you want to build websites</h2>
-                <p>
-                  <strong>HTML & CSS</strong> – the basic languages for the structure and design
-                  of web pages. <strong>JavaScript</strong> – adds interactivity (animations,
-                  forms, features). After mastering these technologies,
-                  you can move on to modern frameworks like React,
-                  Angular or Vue.
-                </p>
-                <p>
-                  <h2>🤖 If you want desktop apps, AI, or data analysis</h2>
-                  <p>
-                    <strong>Python</strong> – easy to learn, with a clear syntax and plenty of beginner resources.
-                    Widely used in artificial intelligence, data analysis, automation, and desktop applications.
-                    Has a large community and many ready-to-use libraries.
-                  </p>
-                </p>
-              </article>
-              <article>
-                <h2>🎮 If you want to create games</h2>
-                <p>
-                  C++ – used in game engines like Unity/Unreal Engine, offering high performance.
-                  C# – the main language in Unity, easier to learn compared to C++.
-                </p>
-              </article>
-              <article>
-                <h2>📱 If you want mobile applications</h2>
-                <p>
-                    <strong>Java</strong> and <strong>Kotlin</strong> for Android.
-                    <strong>Swift</strong> for iOS.
-                    <strong>React Native</strong> or <strong>Dart</strong> with <strong>Flutter</strong> – for mobile apps that run on Android, iOS, Desktop and Web from the same code.
-                </p>
-              </article>
-              <article>
-                <h2>💡 My recommendation</h2>
-                <p>
-                  If you're just starting out and don't know exactly which direction you want to follow, choose a simple and versatile language like <strong>C++</strong>.
-                  This language introduces you to programming, has many free tutorials and a large community to help you.
-                </p>
-                <p>
-                  No matter the choice, remember that the language is just a tool – the most important thing is to learn programming logic and how to think like a programmer.
-                </p>
-              </article>
-            </article>
-            <h2>Article 3: The most popular programming languages.</h2>
-            <article>
-                <article>
-                    <h2>1. Python 🐍</h2>
-                    <p><strong>Why is it popular?:</strong> Simple, easy to read, ideal for beginners.
-                        <br><strong>Use cases:</strong> Artificial intelligence, data analysis, web development, automation.
-                        <br><strong>Advantages:</strong> Very large community, many free libraries.</p>
-                </article>
-                <article>
-                    <h2>2. JavaScript 🌐</h2>
-                    <p><strong>Why is it popular?:</strong> It is the main language of the web.
-                        <br><strong>Use cases:</strong> Interactive websites, web applications, mobile apps (via frameworks like React Native).
-                        <br><strong>Advantages:</strong> Works directly in the browser, numerous resources.</p>
-                </article>
-                <article>
-                    <h2>3. Java ☕</h2>
-                    <p><strong>Why is it popular?:</strong> Stable and widely used in large companies.
-                        <br><strong>Use cases:</strong> Enterprise applications, Android, banking systems.
-                        <br><strong>Advantages:</strong> High portability (“Write once, run anywhere”).</p>
-                </article>
-                <article>
-                    <h2>4. C# 🎮</h2>
-                    <p><strong>Why is it popular?:</strong> The main language for Unity, used in games and Windows apps.
-                        <br><strong>Use cases:</strong> Game development, desktop applications, mobile apps.
-                        <br><strong>Advantages:</strong> Friendly syntax, Microsoft support.</p>
-                </article>
-                <article>
-                    <h2>5. C++ ⚡</h2>
-                    <p><strong>Why is it popular?:</strong> High performance, used in applications that require a lot of resources.
-                        <br><strong>Use cases:</strong> Game engines, industrial software, operating systems.
-                        <br><strong>Advantages:</strong> Full control over resources.</p>
-                </article>
-                <article>
-                    <h2>6. TypeScript 📘</h2>
-                    <p><strong>Why is it popular?:</strong> An improved version of JavaScript with strict data typing.
-                        <br><strong>Use cases:</strong> Complex web applications, large projects.
-                        <br><strong>Advantages:</strong> Reduces errors, easy to learn if you know JavaScript.</p>
-                </article>
-                <article>
-                    <h2>7. Go 🚀</h2>
-                    <p><strong>Why is it popular?:</strong> Fast and simple, created by Google.
-                        <br><strong>Use cases:</strong> Server applications, cloud computing, microservices.
-                        <br><strong>Advantages:</strong> High performance, fast compilation.</p>
-                </article>
-                <article>
-                    <h2>8. PHP 🌍</h2>
-                    <p><strong>Why is it popular?:</strong> Still widely used for website development.
-                        <br><strong>Use cases:</strong> Web backend, CMS (WordPress, Drupal).
-                        <br><strong>Advantages:</strong> Easy to find hosting, many frameworks available.</p>
-                </article>
-                <article>
-                    <h2>9. Swift 🍏</h2>
-                    <p><strong>Why is it popular?:</strong> The official language for iOS and macOS apps.
-                        <br><strong>Use cases:</strong> Apple mobile applications.
-                        <br><strong>Advantages:</strong> Fast, modern, optimized for the Apple ecosystem.</p>
-                </article>
-                <article>
-                    <h2>10. Rust 🦀</h2>
-                    <p><strong>Why is it popular?:</strong> Known for memory safety and high performance.
-                        <br><strong>Use cases:</strong> Operating systems, high-performance applications.
-                        <br><strong>Advantages:</strong> Resource control, no garbage collection.</p>
-                </article>
-                <article>
-                    <h2>Conclusion:</h2>
-                    <p>The choice of language depends on your goal. If you want something easy and versatile, start with Python or JavaScript. If you want maximum performance, choose C++ or Rust.</p>
-                </article>
-                            <h2>Article 4: How to learn programming effectively?</h2>
-            <article>
-                <p>
-                    Start with a simple language like <strong>C++</strong>. Follow online tutorials, read books, and practice daily. Don't be afraid to make mistakes – every error is a learning opportunity.
-                </p>
-                <p>
-                    Join online communities, forums, or study groups to get help and share experiences.
-                </p>
-            </article>
-            <h2>Article 5: Useful resources for learning programming</h2>
-            <article>
-                <p>
-                    There are many online resources to learn programming. Here are some of the most popular:
-                </p>
-                <ul>
-                    <li><a href="https://www.codecademy.com/"><strong>Codecademy</strong></a> - An interactive platform to learn different programming languages.</li>
-                    <li><a href="https://www.freecodecamp.org/"><strong>freeCodeCamp</strong></a> - An online community offering free programming courses.</li>
-                    <li><a href="https://www.udemy.com/"><strong>Udemy</strong></a> - A platform with paid and free courses on various topics, including programming.</li>
-                    <li><a href="https://www.coursera.org/"><strong>Coursera</strong></a> - Offers courses from prestigious universities, including programming.</li>
-                    <li><a href="https://www.youtube.com/"><strong>YouTube</strong></a> - A vast source of programming video tutorials.</li>
-                    <li><a href="https://www.pbinfo.ro/"><strong>pbinfo</strong></a> - A platform dedicated to programming learning resources, especially fundamentals (C++).</li>
-                    <li><a href="https://www.w3schools.com/"><strong>W3Schools</strong></a> - An excellent resource for learning HTML, CSS, JavaScript, and more.</li>
-                </ul>
-            </article>
-            <h2>Article 6: How to become a successful programmer?</h2>
-            <article>
-                <p>
-                    To become a successful programmer, it is important to have a solid foundation in the fundamental concepts of programming. Start with a basic language like C++ and learn about data structures, algorithms, and software design principles.
-                </p>
-                <p>
-                    Practice consistently, work on personal projects, and collaborate with other programmers to improve your skills.
-                    Work on projects that showcase your knowledge and help you learn new technologies.
-                </p>
-            <h2>Article 7: The most common mistakes in programming</h2>
-            <article>
-                <p>
-                    In programming, mistakes are inevitable. Here are some of the most common:
-                </p>
-                <ul>
-                    <li><strong>Ignoring documentation</strong> – it is essential to read the documentation of the language or library you are using.</li>
-                    <li><strong>Not testing the code</strong> – test your code frequently to detect errors as early as possible.</li>
-                    <li><strong>Writing overly complex code</strong> – try to write clear and concise code, avoiding unnecessary complexity.</li>
-                    <li><strong>Neglecting comments</strong> – comment your code to make it easier for you and others to understand.</li>
-                </ul>
-            </article>
-            <h2>Article 8: The importance of community in programming</h2>
-            <article>
-                <p>
-                    Community is an essential aspect of <strong>programming</strong>. Participating in forums, discussion groups, or local events can provide support, resources, and learning opportunities.
-                </p>
-                <p>
-                    Don’t hesitate to ask for help or offer assistance to others – collaboration is the key to success in this field.
-                </p>
-            </article>
-            <h2>
-              Article 9: How to collaborate effectively in programming projects?
-            </h2>
-            <article>
-              <p>
-                Collaboration in programming projects is essential for their success. Here are some tips:
-              </p>
-              <ul>
-                  <li><strong>Use a version control system</strong> (e.g., Git) to track changes and collaborate effectively.</li>
-                  <li><strong>Set clear rules</strong> for coding and documentation so all team members are on the same page.</li>
-                  <li><strong>Communication is key</strong> – use platforms like Slack to discuss project progress.</li>
-                </ul>
-              </article>
-            </h2>
-            <h2>
-              Article 10: How to install and configure Visual Studio Code
-            </h2>
-            <article>
-              <p>
-                Visual Studio Code is a popular and powerful code editor. To install it:
-              </p>
-              <ol>
-                <li>Download Visual Studio Code from the official website.</li>
-                <li>Install it by following the steps in the setup wizard.</li>
-                <li>Install the necessary extensions for your preferred language (e.g., Python, JavaScript).</li>
-              </ol>
-            </article>
-            <h2>
-              Article 11: Your first program – “Hello, World!” in 3 languages
-            </h2>
-            <article>
-              <p>
-                The first program you write in any programming language is usually “Hello, World!”. Here’s how it looks in three popular languages:
-              </p>
-              <pre><code class="language-python">print("Hello, World!")</code></pre>
-              <pre><code class="language-javascript">console.log("Hello, World!");</code></pre>
-              <pre><code class="language-cpp">std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;</code></pre>
-            </article>
-            <h2>Article 12: What are variables and data types?</h2>
-            <article>
-              <p>
-                Variables are storage spaces for data. Each variable has a data type that determines what kind of information it can contain (e.g., integers, strings).
-              </p>
-              <p>
-                Examples of variables in Python:
-              </p>
-              <pre><code class="language-python">number = 10  # integer
-text = "Hello, world!"  # string
-list_data = [1, 2, 3, 4, 5]  # list
-              </code></pre>
-            </article>
-            <h2>
-              Article 13: What are conditions and how to use them (if, else, switch)
-            </h2>
-            <article>
-              <p>
-                Conditions are used to execute different blocks of code depending on certain conditions. Here’s how it looks in <strong>Python</strong>:
-              </p>
-              <pre><code class="language-python">number = 5
+  </nav>
+  <header style="position: relative; width: fit-content; margin: 0 auto">
+    <img src="images/blog.jpg" style="display: block; width: 100%; height: auto" />
+    <h1 style="position: absolute; left: 50%; bottom: 0; transform: translateX(-50%) translateY(30%); background: rgba(0, 123, 255, 0.5); color: white; padding: 16px 32px; border-radius: 12px; font-size: 2.5rem; text-align: center; min-width: 60%; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);">
+      Blogul meu
+    </h1>
+  </header>
+  <div class="blog-content-centered">
+    <h1>Articole:</h1>
+    <ul>
+      <h2>Articolul 1: Ce este programarea?</h2>
+      <article>
+        <p>Programarea este procesul de creare a unui set de instrucțiuni care îi spun unui calculator cum să execute o sarcină. Este un instrument esențial în dezvoltarea software și automatizarea proceselor.</p>
+      </article>
+      <article>
+        <h2>Cum comunică oamenii cu calculatoarele?</h2>
+        <p>Calculatoarele înțeleg doar <strong>cod binar</strong> (0 și 1). Pentru ca oamenii să nu fie nevoiți să scrie în această limbă, au fost inventate <strong>limbaje de programare</strong> precum Python, JavaScript, C++ sau Java.</p>
+        <p>Un <strong>compilator</strong> sau un <strong>interpret</strong> traduce codul pe care îl scriem în instrucțiuni pe care calculatorul le poate executa.</p>
+      </article>
+      <h2>Articolul 2: Cum să alegi primul limbaj de programare?</h2>
+      <article>
+        <p>Există sute de limbaje de programare, dar nu trebuie să le înveți pe toate. Alegerea depinde de ceea ce vrei să creezi și cât de repede vrei să vezi rezultate. Înainte să începi, întreabă-te: Ce vreau să fac cu programarea?</p>
+        <h2>💻 Dacă vrei să creezi site-uri web</h2>
+        <p><strong>HTML & CSS</strong> – limbajele de bază pentru structura și designul paginilor web. <strong>JavaScript</strong> – adaugă interactivitate (animații, formulare, funcționalități). După ce stăpânești aceste tehnologii, poți trece la framework-uri moderne precum React, Angular sau Vue.</p>
+        <h2>🤖 Dacă vrei aplicații desktop, AI sau analiză de date</h2>
+        <p><strong>Python</strong> – ușor de învățat, cu sintaxă clară și multe resurse pentru începători. Folosit pe scară largă în inteligență artificială, analiză de date, automatizare și aplicații desktop. Are o comunitate mare și multe biblioteci gata de utilizare.</p>
+        <h2>🎮 Dacă vrei să creezi jocuri</h2>
+        <p>C++ – folosit în motoare de jocuri precum Unity/Unreal Engine, oferă performanță ridicată. C# – limbajul principal în Unity, mai ușor de învățat decât C++.</p>
+        <h2>📱 Dacă vrei aplicații mobile</h2>
+        <p><strong>Java</strong> și <strong>Kotlin</strong> pentru Android. <strong>Swift</strong> pentru iOS. <strong>React Native</strong> sau <strong>Dart</strong> cu <strong>Flutter</strong> – pentru aplicații mobile care rulează pe Android, iOS, Desktop și Web din același cod.</p>
+        <h2>💡 Recomandarea mea</h2>
+        <p>Dacă abia începi și nu știi exact ce direcție vrei să urmezi, alege un limbaj simplu și versatil precum <strong>C++</strong>. Acest limbaj te introduce în programare, are multe tutoriale gratuite și o comunitate mare care te poate ajuta.</p>
+        <p>Indiferent de alegere, amintește-ți că limbajul este doar un instrument – cel mai important este să înveți logica programării și cum să gândești ca un programator.</p>
+      </article>
+      <h2>Articolul 3: Cele mai populare limbaje de programare.</h2>
+      <article>
+        <h2>1. Python 🐍</h2>
+        <p><strong>De ce e popular?:</strong> Simplu, ușor de citit, ideal pentru începători.<br><strong>Utilizări:</strong> Inteligență artificială, analiză de date, dezvoltare web, automatizare.<br><strong>Avantaje:</strong> Comunitate foarte mare, multe biblioteci gratuite.</p>
+        <h2>2. JavaScript 🌐</h2>
+        <p><strong>De ce e popular?:</strong> Este limbajul principal al web-ului.<br><strong>Utilizări:</strong> Site-uri interactive, aplicații web, aplicații mobile (prin framework-uri ca React Native).<br><strong>Avantaje:</strong> Rulează direct în browser, numeroase resurse.</p>
+        <h2>3. Java ☕</h2>
+        <p><strong>De ce e popular?:</strong> Stabil și folosit pe scară largă în companii mari.<br><strong>Utilizări:</strong> Aplicații enterprise, Android, sisteme bancare.<br><strong>Avantaje:</strong> Portabilitate ridicată („Scrie o dată, rulează oriunde”).</p>
+        <h2>4. C# 🎮</h2>
+        <p><strong>De ce e popular?:</strong> Limbajul principal pentru Unity, folosit în jocuri și aplicații Windows.<br><strong>Utilizări:</strong> Dezvoltare de jocuri, aplicații desktop, aplicații mobile.<br><strong>Avantaje:</strong> Sintaxă prietenoasă, suport Microsoft.</p>
+        <h2>5. C++ ⚡</h2>
+        <p><strong>De ce e popular?:</strong> Performanță ridicată, folosit în aplicații care necesită multe resurse.<br><strong>Utilizări:</strong> Motoare de jocuri, software industrial, sisteme de operare.<br><strong>Avantaje:</strong> Control total asupra resurselor.</p>
+        <h2>6. TypeScript 📘</h2>
+        <p><strong>De ce e popular?:</strong> O versiune îmbunătățită de JavaScript cu tipare stricte de date.<br><strong>Utilizări:</strong> Aplicații web complexe, proiecte mari.<br><strong>Avantaje:</strong> Reduce erorile, ușor de învățat dacă știi JavaScript.</p>
+        <h2>7. Go 🚀</h2>
+        <p><strong>De ce e popular?:</strong> Rapid și simplu, creat de Google.<br><strong>Utilizări:</strong> Aplicații server, cloud computing, microservicii.<br><strong>Avantaje:</strong> Performanță ridicată, compilare rapidă.</p>
+        <h2>8. PHP 🌍</h2>
+        <p><strong>De ce e popular?:</strong> Încă folosit pe scară largă pentru dezvoltarea site-urilor.<br><strong>Utilizări:</strong> Backend web, CMS (WordPress, Drupal).<br><strong>Avantaje:</strong> Găsești ușor hosting, multe framework-uri disponibile.</p>
+        <h2>9. Swift 🍏</h2>
+        <p><strong>De ce e popular?:</strong> Limbajul oficial pentru aplicații iOS și macOS.<br><strong>Utilizări:</strong> Aplicații mobile Apple.<br><strong>Avantaje:</strong> Rapid, modern, optimizat pentru ecosistemul Apple.</p>
+        <h2>10. Rust 🦀</h2>
+        <p><strong>De ce e popular?:</strong> Cunoscut pentru siguranța memoriei și performanță ridicată.<br><strong>Utilizări:</strong> Sisteme de operare, aplicații de performanță.<br><strong>Avantaje:</strong> Controlul resurselor, fără garbage collection.</p>
+        <h2>Concluzie:</h2>
+        <p>Alegerea limbajului depinde de scopul tău. Dacă vrei ceva ușor și versatil, începe cu Python sau JavaScript. Dacă vrei performanță maximă, alege C++ sau Rust.</p>
+      </article>
+      <h2>Articolul 4: Cum să înveți programarea eficient?</h2>
+      <article>
+        <p>Începe cu un limbaj simplu precum <strong>C++</strong>. Urmează tutoriale online, citește cărți și exersează zilnic. Nu te teme să greșești – fiecare eroare este o oportunitate de învățare.</p>
+        <p>Alătură-te comunităților online, forumurilor sau grupurilor de studiu pentru a primi ajutor și a împărtăși experiențe.</p>
+      </article>
+      <h2>Articolul 5: Resurse utile pentru învățarea programării</h2>
+      <article>
+        <p>Există multe resurse online pentru a învăța programare. Iată câteva dintre cele mai populare:</p>
+        <ul>
+          <li><a href="https://www.codecademy.com/"><strong>Codecademy</strong></a> - Platformă interactivă pentru învățarea diferitelor limbaje de programare.</li>
+          <li><a href="https://www.freecodecamp.org/"><strong>freeCodeCamp</strong></a> - Comunitate online care oferă cursuri gratuite de programare.</li>
+          <li><a href="https://www.udemy.com/"><strong>Udemy</strong></a> - Platformă cu cursuri plătite și gratuite pe diverse teme, inclusiv programare.</li>
+          <li><a href="https://www.coursera.org/"><strong>Coursera</strong></a> - Oferă cursuri de la universități prestigioase, inclusiv programare.</li>
+          <li><a href="https://www.youtube.com/"><strong>YouTube</strong></a> - Sursă vastă de tutoriale video de programare.</li>
+          <li><a href="https://www.pbinfo.ro/"><strong>pbinfo</strong></a> - Platformă dedicată resurselor de învățare a programării, în special pentru fundamentale (C++).</li>
+          <li><a href="https://www.w3schools.com/"><strong>W3Schools</strong></a> - Resursă excelentă pentru învățarea HTML, CSS, JavaScript și altele.</li>
+        </ul>
+      </article>
+      <h2>Articolul 6: Cum să devii un programator de succes?</h2>
+      <article>
+        <p>Pentru a deveni un programator de succes, este important să ai o bază solidă în conceptele fundamentale ale programării. Începe cu un limbaj de bază precum C++ și învață despre structuri de date, algoritmi și principii de proiectare software.</p>
+        <p>Exersează constant, lucrează la proiecte personale și colaborează cu alți programatori pentru a-ți îmbunătăți abilitățile. Lucrează la proiecte care să-ți evidențieze cunoștințele și să te ajute să înveți tehnologii noi.</p>
+      </article>
+      <h2>Articolul 7: Cele mai frecvente greșeli în programare</h2>
+      <article>
+        <p>În programare, greșelile sunt inevitabile. Iată câteva dintre cele mai frecvente:</p>
+        <ul>
+          <li><strong>Ignorarea documentației</strong> – este esențial să citești documentația limbajului sau bibliotecii pe care o folosești.</li>
+          <li><strong>Netestarea codului</strong> – testează codul frecvent pentru a detecta erorile cât mai devreme.</li>
+          <li><strong>Scrierea de cod prea complex</strong> – încearcă să scrii cod clar și concis, evitând complexitatea inutilă.</li>
+          <li><strong>Nepăsarea față de comentarii</strong> – comentează codul pentru a-l face mai ușor de înțeles pentru tine și pentru alții.</li>
+        </ul>
+      </article>
+      <h2>Articolul 8: Importanța comunității în programare</h2>
+      <article>
+        <p>Comunitatea este un aspect esențial al <strong>programării</strong>. Participarea la forumuri, grupuri de discuții sau evenimente locale poate oferi suport, resurse și oportunități de învățare.</p>
+        <p>Nu ezita să ceri ajutor sau să oferi sprijin altora – colaborarea este cheia succesului în acest domeniu.</p>
+      </article>
+      <h2>Articolul 9: Cum să colaborezi eficient în proiecte de programare?</h2>
+      <article>
+        <p>Colaborarea în proiectele de programare este esențială pentru succesul lor. Iată câteva sfaturi:</p>
+        <ul>
+          <li><strong>Folosește un sistem de control al versiunilor</strong> (ex: Git) pentru a urmări modificările și a colabora eficient.</li>
+          <li><strong>Stabilește reguli clare</strong> pentru scrierea codului și documentație, astfel încât toți membrii echipei să fie pe aceeași pagină.</li>
+          <li><strong>Comunicarea este esențială</strong> – folosește platforme precum Slack pentru a discuta progresul proiectului.</li>
+        </ul>
+      </article>
+      <h2>Articolul 10: Cum să instalezi și să configurezi Visual Studio Code</h2>
+      <article>
+        <p>Visual Studio Code este un editor de cod popular și puternic. Pentru a-l instala:</p>
+        <ol>
+          <li>Descarcă Visual Studio Code de pe site-ul oficial.</li>
+          <li>Instalează-l urmând pașii din asistentul de instalare.</li>
+          <li>Instalează extensiile necesare pentru limbajul preferat (ex: Python, JavaScript).</li>
+        </ol>
+      </article>
+      <h2>Articolul 11: Primul tău program – „Hello, World!” în 3 limbaje</h2>
+      <article>
+        <p>Primul program pe care îl scrii în orice limbaj de programare este de obicei „Hello, World!”. Iată cum arată în trei limbaje populare:</p>
+        <pre><code class="language-python">print("Hello, World!")</code></pre>
+        <pre><code class="language-javascript">console.log("Hello, World!");</code></pre>
+        <pre><code class="language-cpp">std::cout << "Hello, World!" << std::endl;</code></pre>
+      </article>
+      <h2>Articolul 12: Ce sunt variabilele și tipurile de date?</h2>
+      <article>
+        <p>Variabilele sunt spații de stocare pentru date. Fiecare variabilă are un tip de date care determină ce fel de informații poate conține (ex: întregi, șiruri de caractere).</p>
+        <p>Exemple de variabile în Python:</p>
+        <pre><code class="language-python">number = 10  # întreg
+text = "Hello, world!"  # șir de caractere
+list_data = [1, 2, 3, 4, 5]  # listă
+        </code></pre>
+      </article>
+      <h2>Articolul 13: Ce sunt condițiile și cum le folosești (if, else, switch)</h2>
+      <article>
+        <p>Condițiile sunt folosite pentru a executa diferite blocuri de cod în funcție de anumite condiții. Iată cum arată în <strong>Python</strong>:</p>
+        <pre><code class="language-python">number = 5
 if number > 0:
-    print("The number is positive.")
+    print("Numărul este pozitiv.")
 elif number < 0:
-    print("The number is negative.")
+    print("Numărul este negativ.")
 else:
-    print("The number is zero.")
-              </code></pre>
-            </article>
-            </h2>
-            <h2>Article 14: What are loops and how to use them (for, while)</h2>
-            <article>
-              <p>
-                Loops are used to repeat a block of code multiple times. Here’s how it looks in <strong>Python</strong>:
-              </p>
-              <pre><code class="language-python">for i in range(5):
+    print("Numărul este zero.")
+        </code></pre>
+      </article>
+      <h2>Articolul 14: Ce sunt buclele și cum le folosești (for, while)</h2>
+      <article>
+        <p>Buclele sunt folosite pentru a repeta un bloc de cod de mai multe ori. Iată cum arată în <strong>Python</strong>:</p>
+        <pre><code class="language-python">for i in range(5):
     print(i)
-              </code></pre>
-              <pre><code class="language-python">while True:
-    print("This is an infinite loop.")
-              </code></pre>
-            </article>
-            <h2>Article 15: What are functions and how to define them?</h2>
-            <article>
-              <p>
-                Functions are reusable blocks of code that can be called whenever needed. Here’s how it looks in <strong>Python</strong>:
-              </p>
-              <pre><code class="language-python">def greet(name):
-    print(f"Hello, {name}!")
+        </code></pre>
+        <pre><code class="language-python">while True:
+    print("Aceasta este o buclă infinită.")
+        </code></pre>
+      </article>
+      <h2>Articolul 15: Ce sunt funcțiile și cum le definești?</h2>
+      <article>
+        <p>Funcțiile sunt blocuri de cod reutilizabile care pot fi apelate ori de câte ori este nevoie. Iată cum arată în <strong>Python</strong>:</p>
+        <pre><code class="language-python">def greet(name):
+    print(f"Salut, {name}!")
 
-greet("Aurel")  # Calling the function
-              </code></pre>
-          </ul>
-          <h1>Programming news</h1>
-          <h1>Tech news</h1>
-        </article>
-        </div>
-        <footer>
-          <p>&copy; 2025 Ioniță Aurel-Mihai. All rights reserved.</p>
-        </footer>
-      </body>
-    </html>
-    <script src="script.js" defer></script>
-  </body>
+greet("Aurel")  # Apelarea funcției
+        </code></pre>
+      </article>
+    </ul>
+    <h1>Știri din programare</h1>
+    <h1>Știri din tehnologie</h1>
+  </div>
+  <footer>
+    <p>&copy; 2025 Ioniță Aurel-Mihai. Toate drepturile rezervate.</p>
+  </footer>
+</body>
 </html>
 
