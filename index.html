@@ -1,90 +1,114 @@
 <!DOCTYPE html>
 <html lang="ro">
-
-<head>
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0QFVDBGT1"></script>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q0QFVDBGT1"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-Q0QFVDBGT1');
+      gtag("config", "G-Q0QFVDBGT1");
     </script>
-    <meta charset="UTF-8">
-    <link rel="icon" href="images/icon.png" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofoliu Personal</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <meta name="google-site-verification" content="PwSm_yXYRSBIS82W3vIwn-X4BfYxTEGtyCA3cC7nXz4" />
-</head>
+    <meta
+      name="google-site-verification"
+      content="PwSm_yXYRSBIS82W3vIwn-X4BfYxTEGtyCA3cC7nXz4"
+    />
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar">
-        <a href="#" class="logo">
-            <img src="images/icon.png" alt="icon" class="site-icon" style="height:32px;vertical-align:middle;margin-right:8px;">
-            Portofoliu
-        </a>
-        <ul class="nav-menu">
-            <li class="active"><a href="index.html">Acasă</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="about.html">Despre mine</a></li>
-            <li><a href="Skills.html">Competențe</a></li>
-        </ul>
-        <button class="menu-toggle" aria-label="Deschide meniul">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+      <a href="#" class="logo">
+        <img
+          src="images/icon.png"
+          alt="icon"
+          class="site-icon"
+          style="height: 32px; vertical-align: middle; margin-right: 8px"
+        />
+        Portofoliu
+      </a>
+      <ul class="nav-menu">
+        <li class="active"><a href="index.html">Acasă</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="about.html">Despre mine</a></li>
+        <li><a href="Skills.html">Competențe</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Deschide meniul">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
-        <nav id="hamburger-nav" style="display:none">
-                    <div class="logo">Ioniță Aurel-Mihai</div>
-                    <div class="hamburger-menu">
-                        <div class="hamburger-icon" onclick="toggleMenu()">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="menu-links">
-                            <li><a href="#about" onclick="toggleMenu()">Despre mine</a></li>
-                            <li><a href="#experience" onclick="toggleMenu()">Experiență</a></li>
-                            <li><a href="#projects" onclick="toggleMenu()">Proiecte</a></li>
-                            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                        </div>
-                    </div>
-        </nav>
-                <section class="home">
-            <div class="home-flex">
-                <div class="home-info">
-                    <h1>Ioniță Aurel-Mihai</h1>
-                    <h2>Sunt Web Developer</h2>
-                    <p>"Nu subestima niciodată oamenii care încearcă să facă lumea un loc mai bun. Doar aceștia reușesc cu adevărat." - Bill Gates</p>
-                    <div class="btn-sci">
-                        <a href="CV.html" class="btn">Vezi CV-ul</a>
-                        <div class="sci">
-                            <a href="https://github.com/iam269"><i class='bx bxl-github'></i></a>
-                            <a href="https://www.linkedin.com/in/aurel-ionita-20648536a/"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://www.instagram.com/eusuntaurel1/"><i class='bx bxl-instagram' ></i></a>
-                            <a href="https://www.facebook.com/share/1HRmGUpP3L/"><i class='bx bxl-facebook' ></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="home-img">
-                    <div class="img-box">
-                        <div class="img-item">
-                            <img src="images/home.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+    <nav id="hamburger-nav" style="display: none">
+      <div class="logo">Ioniță Aurel-Mihai</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Despre mine</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiență</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Proiecte</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section class="home">
+      <div class="home-flex">
+        <div class="home-info">
+          <h1>Ioniță Aurel-Mihai</h1>
+          <h2>Sunt Web Developer</h2>
+          <p>
+            "Nu subestima niciodată oamenii care încearcă să facă lumea un loc
+            mai bun. Doar aceștia reușesc cu adevărat." - Bill Gates
+          </p>
+          <div class="btn-sci">
+            <a href="CV.html" class="btn">Vezi CV-ul</a>
+            <div class="sci">
+              <a href="https://github.com/iam269"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/aurel-ionita-20648536a/"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/eusuntaurel1/"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/share/1HRmGUpP3L/"
+                ><i class="bx bxl-facebook"></i
+              ></a>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="home-img">
+          <div class="img-box">
+            <div class="img-item">
+              <img src="images/home.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
-    <p>&copy; 2025 Ioniță Aurel-Mihai. Toate drepturile rezervate.</p>
+      <p>&copy; 2025 Ioniță Aurel-Mihai. Toate drepturile rezervate.</p>
     </footer>
-</body>
-    
+  </body>
 </html>
