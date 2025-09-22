@@ -16,6 +16,18 @@
     />
     <link rel="stylesheet" href="style.css" />
     <meta name="description" content="Articole, tutoriale și gânduri despre tehnologie, programare și proiecte personale de la Ionita Aurel Mihai.">
+    <meta name="keywords" content="blog programare, tutoriale, Ionita Aurel Mihai, tehnologie, web development, limbaje programare, proiecte personale">
+    <meta property="og:title" content="Blogul Meu - Ionita Aurel Mihai">
+    <meta property="og:description" content="Articole, tutoriale și gânduri despre tehnologie, programare și proiecte personale de la Ionita Aurel Mihai.">
+    <meta property="og:image" content="images/blog.jpg">
+    <meta property="og:url" content="Blog.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blogul Meu - Ionita Aurel Mihai">
+    <meta name="twitter:description" content="Articole, tutoriale și gânduri despre tehnologie, programare și proiecte personale de la Ionita Aurel Mihai.">
+    <meta name="twitter:image" content="images/blog.jpg">
+    <meta name="author" content="Ionita Aurel Mihai">
+    <link rel="canonical" href="Blog.html">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -56,8 +68,8 @@
       </h1>
     </header>
     <div class="blog-content-centered">
-      <h1>Articole:</h1>
-      <ul>
+      <h1>Articole</h1>
+      <section class="article-section">
         <h2>Articolul 1: Ce este programarea?</h2>
         <article>
           <p>
@@ -66,8 +78,10 @@
             esențial în dezvoltarea software și automatizarea proceselor.
           </p>
         </article>
+      </section>
+      <section class="article-section">
+        <h2>Cum comunică oamenii cu calculatoarele?</h2>
         <article>
-          <h2>Cum comunică oamenii cu calculatoarele?</h2>
           <p>
             Calculatoarele înțeleg doar <strong>cod binar</strong> (0 și 1).
             Pentru ca oamenii să nu fie nevoiți să scrie în această limbă, au
@@ -80,6 +94,8 @@
             instrucțiuni pe care calculatorul le poate executa.
           </p>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 2: Cum să alegi primul limbaj de programare?</h2>
         <article>
           <p>
@@ -88,7 +104,7 @@
             vrei să vezi rezultate. Înainte să începi, întreabă-te: Ce vreau să
             fac cu programarea?
           </p>
-          <h2>💻 Dacă vrei să creezi site-uri web</h2>
+          <h3>💻 Dacă vrei să creezi site-uri web</h3>
           <p>
             <strong>HTML & CSS</strong> – limbajele de bază pentru structura și
             designul paginilor web. <strong>JavaScript</strong> – adaugă
@@ -96,27 +112,27 @@
             stăpânești aceste tehnologii, poți trece la framework-uri moderne
             precum React, Angular sau Vue.
           </p>
-          <h2>🤖 Dacă vrei aplicații desktop, AI sau analiză de date</h2>
+          <h3>🤖 Dacă vrei aplicații desktop, AI sau analiză de date</h3>
           <p>
             <strong>Python</strong> – ușor de învățat, cu sintaxă clară și multe
             resurse pentru începători. Folosit pe scară largă în inteligență
             artificială, analiză de date, automatizare și aplicații desktop. Are
             o comunitate mare și multe biblioteci gata de utilizare.
           </p>
-          <h2>🎮 Dacă vrei să creezi jocuri</h2>
+          <h3>🎮 Dacă vrei să creezi jocuri</h3>
           <p>
             C++ – folosit în motoare de jocuri precum Unity/Unreal Engine, oferă
             performanță ridicată. C# – limbajul principal în Unity, mai ușor de
             învățat decât C++.
           </p>
-          <h2>📱 Dacă vrei aplicații mobile</h2>
+          <h3>📱 Dacă vrei aplicații mobile</h3>
           <p>
             <strong>Java</strong> și <strong>Kotlin</strong> pentru Android.
             <strong>Swift</strong> pentru iOS. <strong>React Native</strong> sau
             <strong>Dart</strong> cu <strong>Flutter</strong> – pentru aplicații
             mobile care rulează pe Android, iOS, Desktop și Web din același cod.
           </p>
-          <h2>💡 Recomandarea mea</h2>
+          <h3>💡 Recomandarea mea</h3>
           <p>
             Dacă abia începi și nu știi exact ce direcție vrei să urmezi, alege
             un limbaj simplu și versatil precum <strong>C++</strong>. Acest
@@ -129,9 +145,11 @@
             cum să gândești ca un programator.
           </p>
         </article>
-        <h2>Articolul 3: Cele mai populare limbaje de programare.</h2>
+      </section>
+      <section class="article-section">
+        <h2>Articolul 3: Cele mai populare limbaje de programare</h2>
         <article>
-          <h2>1. Python 🐍</h2>
+          <h3>1. Python 🐍</h3>
           <p>
             <strong>De ce e popular?:</strong> Simplu, ușor de citit, ideal
             pentru începători.<br /><strong>Utilizări:</strong> Inteligență
@@ -140,7 +158,7 @@
             >
             Comunitate foarte mare, multe biblioteci gratuite.
           </p>
-          <h2>2. JavaScript 🌐</h2>
+          <h3>2. JavaScript 🌐</h3>
           <p>
             <strong>De ce e popular?:</strong> Este limbajul principal al
             web-ului.<br /><strong>Utilizări:</strong> Site-uri interactive,
@@ -148,7 +166,7 @@
             Native).<br /><strong>Avantaje:</strong> Rulează direct în browser,
             numeroase resurse.
           </p>
-          <h2>3. Java ☕</h2>
+          <h3>3. Java ☕</h3>
           <p>
             <strong>De ce e popular?:</strong> Stabil și folosit pe scară largă
             în companii mari.<br /><strong>Utilizări:</strong> Aplicații
@@ -157,7 +175,7 @@
             >
             Portabilitate ridicată („Scrie o dată, rulează oriunde”).
           </p>
-          <h2>4. C# 🎮</h2>
+          <h3>4. C# 🎮</h3>
           <p>
             <strong>De ce e popular?:</strong> Limbajul principal pentru Unity,
             folosit în jocuri și aplicații Windows.<br /><strong
@@ -168,7 +186,7 @@
             >
             Sintaxă prietenoasă, suport Microsoft.
           </p>
-          <h2>5. C++ ⚡</h2>
+          <h3>5. C++ ⚡</h3>
           <p>
             <strong>De ce e popular?:</strong> Performanță ridicată, folosit în
             aplicații care necesită multe resurse.<br /><strong
@@ -179,7 +197,7 @@
             >
             Control total asupra resurselor.
           </p>
-          <h2>6. TypeScript 📘</h2>
+          <h3>6. TypeScript 📘</h3>
           <p>
             <strong>De ce e popular?:</strong> O versiune îmbunătățită de
             JavaScript cu tipare stricte de date.<br /><strong
@@ -190,14 +208,14 @@
             >
             Reduce erorile, ușor de învățat dacă știi JavaScript.
           </p>
-          <h2>7. Go 🚀</h2>
+          <h3>7. Go 🚀</h3>
           <p>
             <strong>De ce e popular?:</strong> Rapid și simplu, creat de
             Google.<br /><strong>Utilizări:</strong> Aplicații server, cloud
             computing, microservicii.<br /><strong>Avantaje:</strong>
             Performanță ridicată, compilare rapidă.
           </p>
-          <h2>8. PHP 🌍</h2>
+          <h3>8. PHP 🌍</h3>
           <p>
             <strong>De ce e popular?:</strong> Încă folosit pe scară largă
             pentru dezvoltarea site-urilor.<br /><strong>Utilizări:</strong>
@@ -206,7 +224,7 @@
             >
             Găsești ușor hosting, multe framework-uri disponibile.
           </p>
-          <h2>9. Swift 🍏</h2>
+          <h3>9. Swift 🍏</h3>
           <p>
             <strong>De ce e popular?:</strong> Limbajul oficial pentru aplicații
             iOS și macOS.<br /><strong>Utilizări:</strong> Aplicații mobile
@@ -222,13 +240,15 @@
             >
             Controlul resurselor, fără garbage collection.
           </p>
-          <h2>Concluzie:</h2>
+          <h3>Concluzie:</h3>
           <p>
             Alegerea limbajului depinde de scopul tău. Dacă vrei ceva ușor și
             versatil, începe cu Python sau JavaScript. Dacă vrei performanță
             maximă, alege C++ sau Rust.
           </p>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 4: Cum să înveți programarea eficient?</h2>
         <article>
           <p>
@@ -241,6 +261,8 @@
             studiu pentru a primi ajutor și a împărtăși experiențe.
           </p>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 5: Resurse utile pentru învățarea programării</h2>
         <article>
           <p>
@@ -289,6 +311,8 @@
             </li>
           </ul>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 6: Cum să devii un programator de succes?</h2>
         <article>
           <p>
@@ -304,6 +328,8 @@
             înveți tehnologii noi.
           </p>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 7: Cele mai frecvente greșeli în programare</h2>
         <article>
           <p>
@@ -330,6 +356,8 @@
             </li>
           </ul>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 8: Importanța comunității în programare</h2>
         <article>
           <p>
@@ -342,7 +370,9 @@
             este cheia succesului în acest domeniu.
           </p>
         </article>
-        <h2>
+      </section>
+      <section class="article-section">
+        <h2 class="long-title">
           Articolul 9: Cum să colaborezi eficient în proiecte de programare?
         </h2>
         <article>
@@ -366,7 +396,9 @@
             </li>
           </ul>
         </article>
-        <h2>
+      </section>
+      <section class="article-section">
+        <h2 class="long-title">
           Articolul 10: Cum să instalezi și să configurezi Visual Studio Code
         </h2>
         <article>
@@ -383,6 +415,8 @@
             </li>
           </ol>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 11: Primul tău program – „Hello, World!” în 3 limbaje</h2>
         <article>
           <p>
@@ -393,6 +427,8 @@
           <pre><code class="language-javascript">console.log("Hello, World!");</code></pre>
           <pre><code class="language-cpp">std::cout << "Hello, World!" << std::endl;</code></pre>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 12: Ce sunt variabilele și tipurile de date?</h2>
         <article>
           <p>
@@ -406,7 +442,9 @@ text = "Hello, world!"  # șir de caractere
 list_data = [1, 2, 3, 4, 5]  # listă
         </code></pre>
         </article>
-        <h2>
+      </section>
+      <section class="article-section">
+        <h2 class="long-title">
           Articolul 13: Ce sunt condițiile și cum le folosești (if, else,
           switch)
         </h2>
@@ -425,6 +463,8 @@ else:
     print("Numărul este zero.")
         </code></pre>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 14: Ce sunt buclele și cum le folosești (for, while)</h2>
         <article>
           <p>
@@ -438,6 +478,8 @@ else:
     print("Aceasta este o buclă infinită.")
         </code></pre>
         </article>
+      </section>
+      <section class="article-section">
         <h2>Articolul 15: Ce sunt funcțiile și cum le definești?</h2>
         <article>
           <p>
@@ -450,9 +492,7 @@ else:
 greet("Aurel")  # Apelarea funcției
         </code></pre>
         </article>
-      </ul>
-      <h1>Știri din programare</h1>
-      <h1>Știri din tehnologie</h1>
+      </section>
     </div>
     <footer>
       <p>&copy; 2025 Ioniță Aurel-Mihai. Toate drepturile rezervate.</p>
