@@ -27,7 +27,7 @@
     <meta name="twitter:image" content="images/blog.jpg">
     <meta name="author" content="Ionita Aurel Mihai">
     <link rel="canonical" href="Blog.html">
-    <script src="script/script.js" defer></script>
+    <script src="script.js" defer></script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0QFVDBGT1"></script>
 <script>
@@ -42,11 +42,7 @@
     <nav class="navbar">
       <a href="index.html" class="logo">
         <img
-          src="images/icon.png"
-          alt="icon"
-          class="site-icon"
-          style="height: 32px; vertical-align: middle; margin-right: 8px"
-        />
+          src="images/icon.png"/>
         Înapoi
       </a>
       <button class="menu-toggle" aria-label="Open menu">
@@ -55,30 +51,21 @@
         <span></span>
       </button>
     </nav>
-    <header style="position: relative; width: fit-content; margin: 0 auto">
-      <img
-        src="images/blog.jpg"
-        style="display: block; width: 100%; height: auto"
-      />
-      <h1
-        style="
-          position: absolute;
-          left: 50%;
-          bottom: 0;
-          transform: translateX(-50%) translateY(30%);
-          background: rgba(0, 123, 255, 0.5);
-          color: white;
-          padding: 16px 32px;
-          border-radius: 12px;
-          font-size: 2.5rem;
-          text-align: center;
-          min-width: 60%;
-          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-        "
-      >
-        Blogul meu
-      </h1>
-    </header>
+    <section class="home">
+      <div class="home-flex">
+        <div class="home-info">
+          <h1>Blogul meu</h1>
+          <p>Articole, tutoriale și gânduri despre tehnologie, programare și proiecte personale.</p>
+        </div>
+        <div class="home-img">
+          <div class="img-box">
+            <div class="img-item">
+              <img src="images/blog.jpg" alt="Blog image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="blog-content-centered">
       <h1>Articole</h1>
       <section class="article-section">
