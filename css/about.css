@@ -1,0 +1,278 @@
+@media (max-width: 700px) {
+  .home {
+    flex-direction: column;
+    padding: 80px 3% 0 3%;
+    height: auto;
+    text-align: center;
+  }
+  .home-info h1 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  .home-info h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .img-box {
+    width: 180px;
+    height: 180px;
+    margin: 30px auto 0 auto;
+  }
+  .img-box .circle-bg {
+    width: 100%;
+    height: 100%;
+  }
+  .img-item {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-item img {
+    width: 160px;
+    height: 160px;
+    border-width: 6px;
+  }
+}
+.img-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive design pentru mobil */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 3%;
+    font-size: 16px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  .navbar ul li {
+    margin: 10px 0 0 0;
+  }
+  .home {
+    flex-direction: column;
+    padding: 100px 3% 0 3%;
+    height: auto;
+    text-align: center;
+  }
+  .home-info h1 {
+    font-size: 32px;
+  }
+  .home-info h2 {
+    font-size: 20px;
+  }
+  .home-info p {
+    font-size: 14px;
+  }
+  .about-img {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .img-box, .img-item, .img-item img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #1f242d;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 25px 9%;
+  background: #06bed6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  margin-left: 35px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  transform: .5s;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 9% 0;
+  color:#fff;
+}
+
+.home-info h1 {
+  font-size: 55px;
+}
+
+.home-info h2 {
+  font-size: 32px;
+  margin-top: -10px;
+}
+
+.home-info p {
+  font-size: 16px;
+  margin: 10px 0 25px;
+}
+
+.home-info .btn-sci {
+  display: flex;
+  align-items: center;
+
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  background: #06bed6;
+  border: 2px solid #06bed6;
+  border-radius: 40px;
+  box-shadow: 0 0 10px #06bed6;
+  font-size: 16px;
+  color: #1f242d;
+  font-weight: 600;
+  transition: .5s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #06bed6;
+  box-shadow: none;
+}
+
+.about-info .btn-sci .sci {
+  margin-left: 20px;
+}
+
+.about-info .btn-sci .sci a{
+  display: inline-flex;
+  padding: 8px;
+  border: 2px solid #06bed6;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #06bed6;
+  margin: 0 8px;
+}
+
+.about-info .btn-sci .sci a:hover {
+  background: #06bed6;
+  color: #1f242d;
+  box-shadow: 0 0 10px #06bed6;
+}
+
+.about-img .img-box {
+  position: relative;
+  width: 32vw;
+  height: 32vw;
+  background: rgb(120, 183, 219);
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-img .img-box::before,
+.about-img .img-box::after {
+  position: absolute;
+  content: '';
+  width: 500px;
+  height: 500px;
+  background: conic-gradient(transparent,transparent,transparent,#06bed6);
+
+}
+
+.about-img .img-box .img-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #1f242d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.about-img .img-box .img-item img {
+  position: relative;
+  display: block;
+  width: 85%;
+  object-fit: cover;
+  mix-blend-mode: lighten;
+}
+
+footer {
+  background-color: #06bed6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 9% 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.home-info {
+  flex: 1;
+  color: #fff;
+}
+
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
